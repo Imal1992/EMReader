@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/full_image"/>
+
+        <ImageView
+            android:id="@+id/full_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/picture"
+            android:layout_margin="5dp"
+            android:background="@drawable/pic_border" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cropped_image_reading"/>
+
+        <ImageView
+            android:id="@+id/picture_crop_reading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/picture"
+            android:layout_margin="5dp"
+            android:background="@drawable/pic_border" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cropped_image_id"
+            />
+
+        <ImageView
+            android:id="@+id/picture_crop_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/picture"
+            android:layout_margin="5dp"
+            android:background="@drawable/pic_border" />
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1.0">
+            <Button
+                android:id="@+id/capture_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/capture"
+                android:layout_weight="1.0"/>
+
+            <Button
+                android:id="@+id/manual_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/enter_manually"
+                />
+            </LinearLayout>
+        <Button
+            android:id="@+id/save_send_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/save_send"
+            />
+    </LinearLayout>
+
+</ScrollView>
